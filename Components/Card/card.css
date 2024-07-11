@@ -1,0 +1,144 @@
+
+
+body{
+    font-family: 'Arial', sans-serif;
+    background-color: rgb(187, 175, 175);
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.card-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* gap: 2rem; */
+    padding: 20px;
+
+}
+.movie-card{
+    position: relatives;
+    width: 70%;
+    height: 70vh;
+    margin: auto;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+.right-content{
+    position: relative;
+    width: 50%;
+    overflow: hidden;
+}
+.right-content img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.left-content{
+    position: relative;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.movie-header{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    /* background-color: magenta; */
+}
+.movieImg{
+    width: 120px;
+    height: 180px;
+    margin-right: 20px;
+    overflow: hidden;
+    border-radius: 8px;
+    border: 2px solid #fff;
+}
+.movieImg img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.movie-details{
+    display: flex;
+    flex-direction: column;
+}
+.movie-name {
+    font-size: 2em;
+    margin: 0 0 10px 0;
+    color: #007acc;
+}
+.movie-actor {
+    margin: 5px 0;
+}
+.movie-duration, 
+.movie-genre{
+    background-color: #007acc;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+.movie-about{
+    margin-top: 20px;
+    font-size: 1em;
+    line-height: 1.6;   
+}
+
+.icons {
+    display: flex;
+    margin-top: 20px;
+}
+
+.icons i {
+    font-size: 1.5em;
+    margin-right: 15px;
+    color: #007acc;
+    cursor: pointer;
+}
+@media (max-width: 768px){
+    .card-container{
+        flex-direction: column;
+        height: auto;
+        width: 90%;
+        padding: 30px;
+    }
+    .right-container{
+        width: 100%;
+        height: 200px;
+    }
+    .right-container img{
+        width: 100%;
+        object-fit: cover;
+    }
+    .card-content {
+        width: 100%;
+        padding: 20px;
+    }
+    .movie-header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .movieImg {
+        width: 120px;
+        height: 180px;
+        margin-bottom: 10px;
+    }
+    .movie-name {
+        font-size: 1.5em;
+    }
+
+    .movie-about {
+        font-size: 0.9em;
+    }
+}
