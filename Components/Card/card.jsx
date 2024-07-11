@@ -1,7 +1,7 @@
 import './card.css'
 // import movieData from '../Card/data';
 // import 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css';
-import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css";
+// import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css";
 
 function MovieCard({Images,Title, Year, Actors,Runtime, Genre, Plot, Poster}){
     return (
